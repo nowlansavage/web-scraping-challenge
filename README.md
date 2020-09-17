@@ -1,5 +1,4 @@
-# web-scraping-challenge
-## Mission to Mars
+# Mission to Mars
 This repo contains files for an application that scrapes the web to get the latest information about the mission to mars. This has three major parts:
 1. The flask app 
 1. The index.html file 
