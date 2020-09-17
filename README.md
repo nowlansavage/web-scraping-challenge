@@ -13,6 +13,16 @@ All files are stored in the **Mission_to_Mars** main folder.
 
 * There is a **static folder** which contains css styling info for the HTML.
 
-* The **templates folder** contains the **index.html** file  
+* The **templates folder** contains the **index.html** file 
+
+* The **images** folder contains screenshots of the web application in use:
+
+![Mars Screenshot 1](/Mission_to_Mars/images/mars_web_app.png)
+
+![Mars Screenshot 1](/Mission_to_Mars/images/mars_web_app2.png)
 
 * Finally the **app.py** file contains the flask app that uses the a function defined in the **mars_scrape.py** file to crape the web for mars data then updated this to a MongoDB database. The app then pulls from this database to populate the html file where the data is vizualized in a web page.
+
+## Issues
+* Currently, one issue  is that the table is loading the HTML rather than loading the data in the table. 
+* I would also like to make the image sizes smaller so that they do not take up the whole page. 
