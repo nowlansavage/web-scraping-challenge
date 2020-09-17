@@ -11,7 +11,7 @@ def scrape():
 	url = 'https://mars.nasa.gov/news/?page=0&per_page=40&order=publish_date+desc%2Ccreated_at+desc&search=&category=19%2C165%2C184%2C204&blank_scope=Latest'
 	#set up chromedriver
 	executable_path = {'executable_path': 'chromedriver.exe'}
-	browser = Browser('chrome', **executable_path, headless=True)
+	browser = Browser('chrome', **executable_path, headless=False)
 	browser.visit(url)
 	html = browser.html
 	time.sleep(2)
@@ -86,11 +86,11 @@ def scrape():
 	    mars_dict['img_url'] = img_url
 	    hemi_list.append(mars_dict)
 	mars_info_dict = {
-	    'featured_news_title': latest_headline, 
-	    'featured_news_p': news_p, 
-	    'featured_image': featured_image_url,
-	    'mars_fact_table': mars_table_html,
-	    'hemisphere_imgs':hemi_list
+	    'latest_headline': latest_headline, 
+	    'news_p': news_p, 
+	    'featured_image_url': featured_image_url,
+	    'mars_table_html': mars_table_html,
+	    'hemi_list':hemi_list
 	}
 	return mars_info_dict
 	
