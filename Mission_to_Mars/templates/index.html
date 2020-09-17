@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mars Facts</title>
+  <style type="text/css">
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
@@ -17,7 +23,7 @@
     </div>
     <h2>Latest Mission to Mars News</h2>
     <h3>{{ mars.latest_headline }}</h3>
-    <p>Min Temp: {{ mars.news_p }}</p>
+    <p>{{ mars.news_p }}</p>
     <div class='row'>
       <div class=col-md-9>
         <h2>Featured Mars Image</h2>
